@@ -1,7 +1,12 @@
 import React from "react";
+import Wrapper from "./views/Wrapper";
+import { ToastProvider } from "react-toast-notifications";
 
 const App = () => {
-  return <div>Hello World</div>;
+  return (
+    <ToastProvider>
+      <Wrapper />
+    </ToastProvider>
+  );
 };
-
 export default App;
