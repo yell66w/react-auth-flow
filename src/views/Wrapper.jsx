@@ -3,6 +3,7 @@ import { AuthService } from "../services/AuthService";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import Home from "./home/Home";
+import Loading from "./loading/Loading";
 
 const Wrapper = () => {
   const [checkingUser, setCheckingUser] = useState(true);
@@ -22,7 +23,7 @@ const Wrapper = () => {
   }, [checkingUser]);
 
   if (checkingUser || isLoading) {
-    return <div>Loading</div>;
+    return <Loading desc={"Loading"} />;
   } else {
     return isAuth ? (
       <Home setCheckingUser={setCheckingUser} setIsAuth={setIsAuth} />

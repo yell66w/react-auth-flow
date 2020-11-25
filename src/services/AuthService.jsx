@@ -9,6 +9,9 @@ export class AuthService {
       localStorage.setItem("token", res.data.token);
     } catch (error) {
       console.error(error.message);
+      throw {
+        message: "Wrong username/password",
+      };
     }
   }
   async signUp(firstName, lastName, username, password) {
@@ -19,9 +22,10 @@ export class AuthService {
         username,
         password,
       });
-      // console.log(res.data);
     } catch (error) {
-      console.error(error.message);
+      throw {
+        message: "Sorry, Please try again!",
+      };
     }
   }
   async checkAuthenticated() {
