@@ -106,7 +106,7 @@ const Login = ({ setShowSignIn, setIsAuth, setCheckingUser }) => {
         initial={{ x: -1000 }}
         animate={{ x: 0 }}
         transition={{ ease: "easeOut", duration: 0.5 }}
-        className="flex w-1/3 flex-col bg-blue-500 min-h-screen h-full text-white justify-center items-center"
+        className="flex w-1/3 flex-col bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen h-full text-white justify-center items-center"
       >
         <h1 className="text-4xl font-bold">Hello, Friend!</h1>
 
@@ -116,7 +116,7 @@ const Login = ({ setShowSignIn, setIsAuth, setCheckingUser }) => {
 
         <input
           onClick={() => setShowSignIn(false)}
-          className="transition duration-500 ease-in-out hover:bg-white hover:text-blue-500 bg-blue-500 border border-white focus:outline-none mt-9 cursor-pointer text-white font-semibold tracking-widest px-16 py-3 rounded-full text-sm"
+          className="transition duration-500 ease-in-out hover:bg-white hover:text-blue-500 bg-transparent border border-white focus:outline-none mt-9 cursor-pointer text-white font-semibold tracking-widest px-16 py-3 rounded-full text-sm"
           type="submit"
           value="SIGN UP"
         />
