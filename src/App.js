@@ -1,7 +1,8 @@
 import React from "react";
+import Wrapper from "./views/Wrapper";
 
 const App = () => {
-  return <div>Hello World</div>;
+  return <Wrapper />;
 };
 
 export default App;
