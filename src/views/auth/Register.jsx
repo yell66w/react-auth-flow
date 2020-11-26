@@ -143,7 +143,7 @@ const Register = ({ setShowSignIn }) => {
         <h1 className="text-4xl font-bold">Hello, Friend!</h1>
 
         <p className="mt-9 w-3/4 text-center tracking-normal">
-          To keep connected with us please Register with your personal info
+          To keep connected with us please login with your personal info
         </p>
 
         <input
